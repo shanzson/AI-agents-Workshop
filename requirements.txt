@@ -1,0 +1,14 @@
+# Workshop dependencies (UTF-8). Tested together on Python 3.13, Oct 2026.
+# Install:  python -m pip install -r requirements.txt
+# Only what the 5 notebooks import - no torch/tensorflow, no Windows-only packages.
+langchain==1.4.7
+langchain-core==1.7.0
+langchain-openai==1.7.2        # only used by instructor-demos/
+langchain-google-genai==4.4.2  # Gemini chat model used by all 5 notebooks
+langchain-community==0.4.2     # needed by nemoguardrails to reach Gemini
+langchain-tavily==0.2.18
+langgraph==1.2.17
+python-dotenv
+nemoguardrails==0.24.1
+jupyterlab
+ipykernel

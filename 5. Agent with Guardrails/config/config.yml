@@ -1,0 +1,12 @@
+models:
+  - type: main
+    engine: google_genai
+    model: gemini-flash-lite-latest   # same model as the notebooks; needs NEMOGUARDRAILS_LLM_FRAMEWORK=langchain (set in the notebook)
+
+rails:
+  input:
+    flows:
+      - self check input    # needs the self_check_input prompt in prompts.yml
+  output:
+    flows:
+      - self check output   # needs the self_check_output prompt in prompts.yml
